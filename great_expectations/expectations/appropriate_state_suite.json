@@ -1,0 +1,475 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "appropriate_state_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "ProductID",
+          "Name",
+          "ProductNumber",
+          "MakeFlag",
+          "FinishedGoodsFlag",
+          "Color",
+          "SafetyStockLevel",
+          "ReorderPoint",
+          "StandardCost",
+          "ListPrice",
+          "Size"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "ProductID",
+        "max_value": 1,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ProductID"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "ProductID",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ProductID",
+        "type_list": [
+          "BIGINT",
+          "BYTEINT",
+          "ByteType()",
+          "INT",
+          "INT64",
+          "INTEGER",
+          "Int16Dtype",
+          "Int32Dtype",
+          "Int64Dtype",
+          "Int8Dtype",
+          "IntegerType",
+          "IntegerType()",
+          "LongType",
+          "LongType()",
+          "SMALLINT",
+          "ShortType()",
+          "TINYINT",
+          "UInt16Dtype",
+          "UInt32Dtype",
+          "UInt64Dtype",
+          "UInt8Dtype",
+          "int",
+          "int16",
+          "int32",
+          "int64",
+          "int8",
+          "int_",
+          "integer",
+          "uint16",
+          "uint32",
+          "uint64",
+          "uint8"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Name"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "Name",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "Name",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ProductNumber"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "ProductNumber",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ProductNumber",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "MakeFlag",
+        "value_set": [
+          false,
+          true
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "MakeFlag"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "MakeFlag",
+        "type_list": [
+          "BIT",
+          "BOOL",
+          "BOOLEAN",
+          "BooleanType",
+          "BooleanType()",
+          "TINYINT",
+          "bool",
+          "boolean"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "FinishedGoodsFlag",
+        "value_set": [
+          false,
+          true
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "FinishedGoodsFlag"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "FinishedGoodsFlag",
+        "type_list": [
+          "BIT",
+          "BOOL",
+          "BOOLEAN",
+          "BooleanType",
+          "BooleanType()",
+          "TINYINT",
+          "bool",
+          "boolean"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Color",
+        "value_set": [
+          "Black",
+          "Blue",
+          "Grey",
+          "Multi",
+          "Red",
+          "Silver",
+          "Silver/Black",
+          "White",
+          "Yellow"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "Color",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "SafetyStockLevel"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "SafetyStockLevel",
+        "type_list": [
+          "BIGINT",
+          "BYTEINT",
+          "ByteType()",
+          "INT",
+          "INT64",
+          "INTEGER",
+          "Int16Dtype",
+          "Int32Dtype",
+          "Int64Dtype",
+          "Int8Dtype",
+          "IntegerType",
+          "IntegerType()",
+          "LongType",
+          "LongType()",
+          "SMALLINT",
+          "ShortType()",
+          "TINYINT",
+          "UInt16Dtype",
+          "UInt32Dtype",
+          "UInt64Dtype",
+          "UInt8Dtype",
+          "int",
+          "int16",
+          "int32",
+          "int64",
+          "int8",
+          "int_",
+          "integer",
+          "uint16",
+          "uint32",
+          "uint64",
+          "uint8"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ReorderPoint"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ReorderPoint",
+        "type_list": [
+          "BIGINT",
+          "BYTEINT",
+          "ByteType()",
+          "INT",
+          "INT64",
+          "INTEGER",
+          "Int16Dtype",
+          "Int32Dtype",
+          "Int64Dtype",
+          "Int8Dtype",
+          "IntegerType",
+          "IntegerType()",
+          "LongType",
+          "LongType()",
+          "SMALLINT",
+          "ShortType()",
+          "TINYINT",
+          "UInt16Dtype",
+          "UInt32Dtype",
+          "UInt64Dtype",
+          "UInt8Dtype",
+          "int",
+          "int16",
+          "int32",
+          "int64",
+          "int8",
+          "int_",
+          "integer",
+          "uint16",
+          "uint32",
+          "uint64",
+          "uint8"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "StandardCost"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ListPrice"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Size",
+        "value_set": [
+          "38",
+          "40",
+          "42",
+          "44",
+          "46",
+          "48",
+          "50",
+          "52",
+          "54",
+          "56",
+          "58",
+          "60",
+          "62",
+          "70",
+          "L",
+          "M",
+          "S",
+          "XL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "Size",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "columns": {
+      "Color": {
+        "description": ""
+      },
+      "FinishedGoodsFlag": {
+        "description": ""
+      },
+      "ListPrice": {
+        "description": ""
+      },
+      "MakeFlag": {
+        "description": ""
+      },
+      "Name": {
+        "description": ""
+      },
+      "ProductID": {
+        "description": ""
+      },
+      "ProductNumber": {
+        "description": ""
+      },
+      "ReorderPoint": {
+        "description": ""
+      },
+      "SafetyStockLevel": {
+        "description": ""
+      },
+      "Size": {
+        "description": ""
+      },
+      "StandardCost": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.16.10"
+  }
+}
