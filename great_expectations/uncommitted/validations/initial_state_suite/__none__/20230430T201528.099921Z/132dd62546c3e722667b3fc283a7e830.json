@@ -1,0 +1,1796 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {
+        "default_identifier_name": "default_identifier"
+      },
+      "data_asset_name": "Product_tbl",
+      "data_connector_name": "default_runtime_data_connector_name",
+      "datasource_name": "localhost_mssql_db"
+    },
+    "batch_markers": {
+      "ge_load_time": "20230430T201528.114924Z"
+    },
+    "batch_spec": {
+      "data_asset_name": "Product_tbl",
+      "query": "SELECT ProductID, Name, ProductNumber, MakeFlag, FinishedGoodsFlag, Color, SafetyStockLevel,        ReorderPoint, StandardCost, ListPrice, Size FROM production.Product",
+      "temp_table_schema_name": null
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "initial_state_checkpoint",
+    "expectation_suite_name": "initial_state_suite",
+    "great_expectations_version": "0.16.10",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2023-04-30T23:15:28.099921+03:00"
+    },
+    "validation_id": null,
+    "validation_time": "20230430T201528.132232Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column_list": [
+            "ProductID",
+            "Name",
+            "ProductNumber",
+            "MakeFlag",
+            "FinishedGoodsFlag",
+            "Color",
+            "SafetyStockLevel",
+            "ReorderPoint",
+            "StandardCost",
+            "ListPrice",
+            "Size"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "ProductID",
+          "Name",
+          "ProductNumber",
+          "MakeFlag",
+          "FinishedGoodsFlag",
+          "Color",
+          "SafetyStockLevel",
+          "ReorderPoint",
+          "StandardCost",
+          "ListPrice",
+          "Size"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "max_value": 504,
+          "min_value": 504
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 504
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "max_value": 1,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "max_value": 999,
+          "min_value": 999
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 999
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "max_value": 673.0396825396825,
+          "min_value": 673.0396825396825
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 673.0396825396825
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "max_value": 747.5,
+          "min_value": 747.5
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 747.5
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                345,
+                345
+              ],
+              [
+                447,
+                447
+              ],
+              [
+                747,
+                747
+              ],
+              [
+                873,
+                873
+              ],
+              [
+                974,
+                974
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            345,
+            447,
+            747,
+            873,
+            974
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductID",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "INTEGER"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Name"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Name",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Name",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NVARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductNumber"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductNumber",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ProductNumber",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NVARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "MakeFlag",
+          "value_set": [
+            false,
+            true
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "MakeFlag"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "MakeFlag",
+          "max_value": 0.003968253968253968,
+          "min_value": 0.003968253968253968
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.003968253968253968
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "MakeFlag",
+          "type_list": [
+            "BIT",
+            "BOOL",
+            "BOOLEAN",
+            "BooleanType",
+            "BooleanType()",
+            "TINYINT",
+            "bool",
+            "boolean"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "BIT"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "FinishedGoodsFlag",
+          "value_set": [
+            false,
+            true
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "FinishedGoodsFlag"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "FinishedGoodsFlag",
+          "max_value": 0.003968253968253968,
+          "min_value": 0.003968253968253968
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.003968253968253968
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "FinishedGoodsFlag",
+          "type_list": [
+            "BIT",
+            "BOOL",
+            "BOOLEAN",
+            "BooleanType",
+            "BooleanType()",
+            "TINYINT",
+            "bool",
+            "boolean"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "BIT"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Color",
+          "value_set": [
+            "Black",
+            "Blue",
+            "Grey",
+            "Multi",
+            "Red",
+            "Silver",
+            "Silver/Black",
+            "White",
+            "Yellow"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 247,
+        "missing_percent": 49.007936507936506,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": "Purple"
+          }
+        ],
+        "partial_unexpected_list": [
+          "Purple"
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 0.38910505836575876,
+        "unexpected_percent_nonmissing": 0.38910505836575876,
+        "unexpected_percent_total": 0.1984126984126984
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Color",
+          "mostly": 0.5
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [
+          {
+            "count": 20,
+            "value": null
+          }
+        ],
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_count": 247,
+        "unexpected_percent": 49.007936507936506
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Color",
+          "max_value": 0.03515625,
+          "min_value": 0.03515625
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.038910505836575876
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Color",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NVARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "max_value": 4,
+          "min_value": 4
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 4
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "max_value": 1000,
+          "min_value": 1000
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1001
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "max_value": 535.1507936507936,
+          "min_value": 535.1507936507936
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 535.5496031746031
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "max_value": 500.0,
+          "min_value": 500.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 500.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                100,
+                100
+              ],
+              [
+                500,
+                500
+              ],
+              [
+                1000,
+                1000
+              ],
+              [
+                1000,
+                1000
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            4,
+            100,
+            500,
+            1000,
+            1000
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "value_set": [
+            4,
+            60,
+            100,
+            500,
+            800,
+            1000
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": 1001
+          }
+        ],
+        "partial_unexpected_list": [
+          1001
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 0.1984126984126984,
+        "unexpected_percent_nonmissing": 0.1984126984126984,
+        "unexpected_percent_total": 0.1984126984126984
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "max_value": 0.011904761904761904,
+          "min_value": 0.011904761904761904
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.013888888888888888
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "SafetyStockLevel",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "SMALLINT"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "max_value": 3,
+          "min_value": 3
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 3
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "max_value": 750,
+          "min_value": 750
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 750
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "max_value": 401.36309523809524,
+          "min_value": 401.36309523809524
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 401.36309523809524
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "max_value": 375.0,
+          "min_value": 375.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 375.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                75,
+                75
+              ],
+              [
+                375,
+                375
+              ],
+              [
+                750,
+                750
+              ],
+              [
+                750,
+                750
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            3,
+            75,
+            375,
+            750,
+            750
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "value_set": [
+            3,
+            45,
+            75,
+            375,
+            600,
+            750
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "max_value": 0.011904761904761904,
+          "min_value": 0.011904761904761904
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.011904761904761904
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ReorderPoint",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "SMALLINT"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "StandardCost"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "StandardCost",
+          "max_value": 0.2261904761904762,
+          "min_value": 0.2261904761904762
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.2261904761904762
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ListPrice"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "ListPrice",
+          "max_value": 0.20436507936507936,
+          "min_value": 0.20436507936507936
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.20436507936507936
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Size",
+          "value_set": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56",
+            "58",
+            "60",
+            "62",
+            "70",
+            "L",
+            "M",
+            "S",
+            "XL"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 293,
+        "missing_percent": 58.13492063492064,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_null",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Size",
+          "mostly": 0.58
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [
+          {
+            "count": 4,
+            "value": "58"
+          },
+          {
+            "count": 2,
+            "value": "44"
+          },
+          {
+            "count": 2,
+            "value": "48"
+          },
+          {
+            "count": 2,
+            "value": "52"
+          },
+          {
+            "count": 2,
+            "value": "62"
+          },
+          {
+            "count": 2,
+            "value": "L"
+          },
+          {
+            "count": 2,
+            "value": "M"
+          },
+          {
+            "count": 1,
+            "value": "56"
+          },
+          {
+            "count": 1,
+            "value": "60"
+          },
+          {
+            "count": 1,
+            "value": "S"
+          },
+          {
+            "count": 1,
+            "value": "XL"
+          }
+        ],
+        "partial_unexpected_list": [
+          "58",
+          "58",
+          "M",
+          "L",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "62",
+          "44",
+          "48",
+          "52",
+          "56",
+          "58",
+          "60",
+          "62",
+          "44",
+          "48",
+          "52",
+          "58"
+        ],
+        "unexpected_count": 211,
+        "unexpected_percent": 41.86507936507937
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Size",
+          "max_value": 0.08530805687203792,
+          "min_value": 0.08530805687203792
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.08530805687203792
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "132dd62546c3e722667b3fc283a7e830",
+          "column": "Size",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NVARCHAR"
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 54,
+    "success_percent": 88.88888888888889,
+    "successful_expectations": 48,
+    "unsuccessful_expectations": 6
+  },
+  "success": false
+}
